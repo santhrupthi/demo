@@ -1,21 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
 
-<h1>Setting Text Content</h1>
+<h1>Registration</h1><hr>
 
-<h2 id="01">Hello World!</h2>
-<h2 id="02">Hello Sweden!</h2>
+<form action="/action_page.php">
+  <fieldset>
+   <br>
+   <label for="fname" >First name:</label>
+   <input type="text" id="fname" placeholder="Enter First Name" name="fname"><br><br>
+   <label for="lname">Last name:</label>
+   <input type="text" id="lname"  placeholder="Enter Last Name" name="lname"><br><br>
+   <label for="email"  placeholder="Enter Your Email Address ">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <input type="email" id="email" name="email"><br><br>
+   <label for="birthday">Birthday:</label>
+   <input type="date" id="birthday" name="birthday"><br><br>
+   
+   <label for="birthday">phone 1 :</label>
+   <input type="number" id="phone1" placeholder="Phone 1" name="phone1"><br><br>
+   <label for="birthday">phone 2 :</label>
+   <input type="number" id="phone2" placeholder="Phone 2" name="phone2"><br><br>
+   <label for="birthday">phone 3 :</label>
+   <input type="number" id="phone3" placeholder="Phone 3" name="phone3"><br><br>
+   <label for="address">Address :</label>
+   <textarea type="text" id="address" cols="22"  placeholder="Enter Your Full Address" name="phone3"></textarea><br><br>
+   <label for="country">Country&nbsp;&nbsp;:&nbsp;&nbsp;</label>
 
-<script>
-$(document).ready(function() {
-  var myElement = $("#01");
-  myElement.text("Hello Sweden!");
-});
-</script>
+<select id="country" width="200">
+  <option value="Dropdown">Dropdown</option>
+  <option value="usa">USA</option>
+  <option value=""></option>
+  <option value=""></option>
+</select><br><br>
+<label for="state">State &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+
+<select id="state">
+  <option value="Dropdown">Dropdown</option>
+  <option value="ka">Karnataka</option>
+  <option value=""></option>
+  <option value=""></option>
+</select><br><br><br>
+  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Reset">
+   <input type="submit" value="Save"><br>
+  </fieldset>
+ </form>
 
 </body>
 </html>
